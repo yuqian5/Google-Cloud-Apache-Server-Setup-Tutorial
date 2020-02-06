@@ -93,15 +93,16 @@ It should take anywhere from 2 - 24 hr for the DNS change to propagate
 
 ## <a name="lamp"></a> Install LAMP Stack on VM Instance
 
-    Run the following command:
-        sudo apt-get update
-        sudo apt-get install software-properties-common
-        sudo apt-add-repository ppa:ondrej/php
-        sudo apt-get update
-        sudo apt-get install mysql-server mysql-client libmysqlclient-dev
-        sudo apt-get install apache2 apache2-doc apache2-utils libexpat1 ssl-cert
-        sudo apt-get install libapache2-mod-php7.0 php7.0 php7.0-common php7.0-curl php7.0-dev php7.0-gd php-pear php-imagick php7.0-mcrypt php7.0-mysql php7.0-ps php7.0-xsl
-        sudo apt-get install phpmyadmin
+Run the following command:
+
+    sudo apt-get update
+    sudo apt-get install software-properties-common
+    sudo apt-add-repository ppa:ondrej/php
+    sudo apt-get update
+    sudo apt-get install mysql-server mysql-client libmysqlclient-dev
+    sudo apt-get install apache2 apache2-doc apache2-utils libexpat1 ssl-cert
+    sudo apt-get install libapache2-mod-php7.0 php7.0 php7.0-common php7.0-curl php7.0-dev php7.0-gd php-pear php-imagick php7.0-mcrypt php7.0-mysql php7.0-ps php7.0-xsl
+    sudo apt-get install phpmyadmin
                 
 
 ## <a name="veri"></a> Verify
