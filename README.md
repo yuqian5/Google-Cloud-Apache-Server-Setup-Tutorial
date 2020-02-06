@@ -44,7 +44,7 @@ In the Network Interface section, you should see a Default Setting, click on it 
 
 Follow the gif below to reserve a static external IP address
 
-![alt text](https://github.com/yuqian5/GoogleCloudWebServerSetup/raw/master/markdownMedia/reserveStaticExternalIP.gif "Instance Hardware Config")
+<img src="https://github.com/yuqian5/GoogleCloudWebServerSetup/raw/master/markdownMedia/reserveStaticExternalIP.gif" alt="alt text" width="460" height="340">
 
 Save that external ip address somewhere, we will need to use it later when we configure the DNS settings
 
