@@ -6,6 +6,8 @@ A Complete Tutorial on setting up a web server on Google Cloud Computing Instanc
 - [1. Obtain Domain Name](##getDomain)
 - [2. Create Google Cloud VM Instance](##createVM)
 - [3. Configure DNS](##setDNS)
+- [4. Install LAMP Stack on VM Instance](##lamp)
+- [5. Verify](##veri)
 
 
 ## <a name="getDomain"></a> Obtain Domain Name
@@ -71,11 +73,44 @@ Click add record set
 
 Leave everything as default except the ipv4 address, where we will fill it with the static external ip address that we got from the previous steps
 
+Now you should see a screen like this 
 
+<img src="https://github.com/yuqian5/GoogleCloudWebServerSetup/raw/master/markdownMedia/addedRecord.png" alt="alt text" width="1000" height="370">
 
+Your DNS zone is now complete
 
+Go to https://domains.google.com/m/registrar/yourDomainName
+    
+Go to the page DNS (from left menu bar)
 
+In the name server section, select Use custom name servers
 
+Add name server, as shwon in your zone
+
+<img src="https://github.com/yuqian5/GoogleCloudWebServerSetup/raw/master/markdownMedia/dns1.png" alt="alt text" width="1000" height="370">
+
+It should take anywhere from 2 - 24 hr for the DNS change to propagate
+
+## <a name="lamp"></a> Install LAMP Stack on VM Instance
+
+    Run the following command:
+        sudo apt-get update
+        sudo apt-get install software-properties-common
+        sudo apt-add-repository ppa:ondrej/php
+        sudo apt-get update
+        sudo apt-get install mysql-server mysql-client libmysqlclient-dev
+        sudo apt-get install apache2 apache2-doc apache2-utils libexpat1 ssl-cert
+        sudo apt-get install libapache2-mod-php7.0 php7.0 php7.0-common php7.0-curl php7.0-dev php7.0-gd php-pear php-imagick php7.0-mcrypt php7.0-mysql php7.0-ps php7.0-xsl
+        sudo apt-get install phpmyadmin
+                
+
+## <a name="veri"></a> Verify
+
+Now to verify that you have done everything correctly, go to your brower and type in your domain name
+
+You should see the following page:
+
+![alt text](https://github.com/yuqian5/GoogleCloudWebServerSetup/raw/master/markdownMedia/apacheDefault.jpg "Instance Hardware Config")
 
 
 
