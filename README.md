@@ -3,11 +3,11 @@ A Complete Tutorial on setting up a web server on Google Cloud Computing Instanc
 
 ## Menu
 
-- [1. Obtain Domain Name](##getDomain)
-- [2. Create Google Cloud VM Instance](##createVM)
-- [3. Configure DNS](##setDNS)
-- [4. Install LAMP Stack on VM Instance](##lamp)
-- [5. Verify](##veri)
+- [1. Obtain Domain Name](#getDomain)
+- [2. Create Google Cloud VM Instance](#createVM)
+- [3. Configure DNS](#setDNS)
+- [4. Install LAMP Stack on VM Instance](#lamp)
+- [5. Verify](#veri)
 
 
 ## <a name="getDomain"></a> Obtain Domain Name
