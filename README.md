@@ -40,7 +40,11 @@ Expand section and navigate to networking tab
 
 In the Network Interface section, you should see a Default Setting, click on it to reveal more information
 
+Follow the gif below to reserve a static external IP address
+
 ![alt text](https://github.com/yuqian5/GoogleCloudWebServerSetup/raw/master/markdownMedia/reserveStaticExternalIP.gif "Instance Hardware Config")
+
+Save that external ip address somewhere, we will need to use it later when we configure the DNS settings
 
 Now you can create the instance, it might take a few minutes
 
@@ -62,6 +66,12 @@ Create Zone
 You should now see a page like this:
 
 <img src="https://github.com/yuqian5/GoogleCloudWebServerSetup/raw/master/markdownMedia/initZone.png" alt="alt text" width="1000" height="370">
+
+Click add record set
+
+Leave everything as default except the ipv4 address, where we will fill it with the static external ip address that we got from the previous steps
+
+
 
 
 
