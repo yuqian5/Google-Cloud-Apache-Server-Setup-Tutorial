@@ -1,4 +1,4 @@
-# GoogleCloudWebServerSetup
+# Google Cloud Web Server Setup
 A Complete Tutorial on setting up a web server on Google Cloud Computing Instance.
 
 ## Menu
