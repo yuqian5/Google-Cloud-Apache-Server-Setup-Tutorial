@@ -95,16 +95,19 @@ It should take anywhere from 2 - 24 hr for the DNS change to propagate
 
 Run the following command:
 
-    sudo apt-get update
-    sudo apt-get install software-properties-common
-    sudo apt-add-repository ppa:ondrej/php
-    sudo apt-get update
-    sudo apt-get install mysql-server mysql-client libmysqlclient-dev
-    sudo apt-get install apache2 apache2-doc apache2-utils libexpat1 ssl-cert
-    sudo apt-get install libapache2-mod-php7.0 php7.0 php7.0-common php7.0-curl php7.0-dev php7.0-gd php-pear php-imagick php7.0-mcrypt php7.0-mysql php7.0-ps php7.0-xsl
-    sudo apt-get install phpmyadmin
-                
-
+    // install apache 2
+    sudo apt update
+    sudo apt install apache2
+    
+    // install mySQL
+    sudo apt install mysql-server
+    
+    // install 
+    sudo apt-get install php libapache2-mod-php php-mysql 
+    
+    // restart apache
+    sudo systemctl restart apache2
+    
 ## <a name="veri"></a> Verify
 
 Now to verify that you have done everything correctly, go to your brower and type in your domain name
